@@ -1,0 +1,42 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+sys-apps/sed
+sys-libs/zlib
+net-misc/dhcp
+sys-apps/sed-4.0.5
+sys-libs/zlib-1.1.4-r1
+net-misc/dhcp-3.0_p2
+>media-libs/libgd-1.6
+>=media-libs/libgd-1.6
+=media-libs/libgd-1.6
+<=media-libs/libgd-1.6
+<media-libs/libgd-1.6
+
+# match sed from the 'gentoo' repository
+sys-apps/sed::gentoo use
+# match kdelibs from the 'kde-testing' repository
+kde-base/kdelibs::kde-testing use
+# match empathy from the 'gnome' repository
+net-im/empathy::gnome use
+# match anything with a version containing 9999, which can be used in
+# package.mask to prevent emerge --autounmask from selecting live ebuilds
+=*/*-*9999* use
+# match anything with a version containing _beta
+=*/*-*_beta* use
+# match anything from the 'sys-apps' category
+sys-apps/* use
+# match packages named 'zlib' from any category
+*/zlib use
+# match any package from a category that begins with 'net-'
+net-*/* use
+# match any package name from any category
+*/* use
+# match any package from the 'gentoo' repository
+*/*::gentoo use
+# force docs for GTK 2.x
+=x11-libs/gtk+-2* doc
+# unforce mysql support for QT
+x11-libs/qt -mysql
