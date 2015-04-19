@@ -1,0 +1,8 @@
+{
+    "description":  "Portage package for Sublime Text",
+    "sublime_text": "*",
+    "version":      "0.0.0",
+    "platforms":    ["*"],
+    "url":          "https://github.com/krizalys/sublime-portage",
+    "dependencies": []
+}

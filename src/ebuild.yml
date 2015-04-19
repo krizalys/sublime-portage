@@ -1,0 +1,14 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+name:      Ebuild
+uuid:      c5418506-a7b0-4b25-a013-2fb4d1d7107c
+scopeName: source.ebuild
+fileTypes: [ebuild]
+
+repository: {}
+
+patterns:
+    - {include: source.shell}
