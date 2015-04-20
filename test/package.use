@@ -3,39 +3,45 @@
 # @link      http://www.krizalys.com/
 #
 
-sys-apps/sed
-sys-libs/zlib
-net-misc/dhcp
-sys-apps/sed-4.0.5
-sys-libs/zlib-1.1.4-r1
-net-misc/dhcp-3.0_p2
->media-libs/libgd-1.6
->=media-libs/libgd-1.6
-=media-libs/libgd-1.6
-<=media-libs/libgd-1.6
-<media-libs/libgd-1.6
+# See:
+# $ man 5 ebuild
+
+sys-apps/sed enable disable
+sys-libs/zlib enable disable
+net-misc/dhcp enable disable
+sys-apps/sed-4.0.5 enable disable
+sys-libs/zlib-1.1.4-r1 enable disable
+net-misc/dhcp-3.0_p2 enable disable
+>media-libs/libgd-1.6 enable disable
+>=media-libs/libgd-1.6 enable disable
+=media-libs/libgd-1.6 enable disable
+<=media-libs/libgd-1.6 enable disable
+<media-libs/libgd-1.6 enable disable
+
+# See:
+# $ man portage
 
 # match sed from the 'gentoo' repository
-sys-apps/sed::gentoo use
+sys-apps/sed::gentoo enable disable
 # match kdelibs from the 'kde-testing' repository
-kde-base/kdelibs::kde-testing use
+kde-base/kdelibs::kde-testing enable disable
 # match empathy from the 'gnome' repository
-net-im/empathy::gnome use
+net-im/empathy::gnome enable disable
 # match anything with a version containing 9999, which can be used in
 # package.mask to prevent emerge --autounmask from selecting live ebuilds
-=*/*-*9999* use
+=*/*-*9999* enable disable
 # match anything with a version containing _beta
-=*/*-*_beta* use
+=*/*-*_beta* enable disable
 # match anything from the 'sys-apps' category
-sys-apps/* use
+sys-apps/* enable disable
 # match packages named 'zlib' from any category
-*/zlib use
+*/zlib enable disable
 # match any package from a category that begins with 'net-'
-net-*/* use
+net-*/* enable disable
 # match any package name from any category
-*/* use
+*/* enable disable
 # match any package from the 'gentoo' repository
-*/*::gentoo use
+*/*::gentoo enable disable
 # force docs for GTK 2.x
 =x11-libs/gtk+-2* doc
 # unforce mysql support for QT
