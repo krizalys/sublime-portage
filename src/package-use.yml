@@ -3,10 +3,10 @@
 # @link      http://www.krizalys.com/
 #
 
-name:      Per-package USE flags
+name:      Per-package USE flag forcing
 uuid:      22739b48-7c8a-4cf7-b767-61cc4cb98b79
 scopeName: text.package-use
-fileTypes: [use, use.force, use.stable.force, use.mask, use.stable.mask]
+fileTypes: [package.use]
 
 repository:
     comment:

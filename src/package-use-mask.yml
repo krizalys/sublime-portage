@@ -1,0 +1,38 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+name:      Per-package USE flag masking
+uuid:      81e517ff-b838-42c9-b354-2e73c5439544
+scopeName: text.package-use-mask
+fileTypes: [package.use.mask, package.use.stable.mask]
+
+repository:
+    comment:
+        comment: Comment
+        name:    comment.line.number-sign.text.package-use-mask
+        match:   "#.*$"
+
+    atom:
+        comment: Atom
+        name:    meta.atom.text.package-use-mask
+        match:   "((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)((::)([A-Za-z][-0-9A-Za-z_]*))?"
+        captures:
+            1:  {name: keyword.operator.text.package-use-mask}   # Operator
+            4:  {name: entity.name.tag.text.package-use-mask}    # Category
+            8:  {name: keyword.operator.text.package-use-mask}   # Separator (/)
+            9:  {name: entity.name.tag.text.package-use-mask}    # Package
+            13: {name: constant.character.text.package-use-mask} # Version
+            18: {name: keyword.operator.text.package-use-mask}   # Separator (::)
+            19: {name: entity.name.tag.text.package-use-mask}    # Overlay
+
+    use:
+        comment: USE flag
+        name:    entity.other.attribute-name.text.package-use-mask
+        match:   "(-?[A-Za-z][-0-9A-Za-z_]*)"
+
+patterns:
+    - {include: "#comment"}
+    - {include: "#atom"}
+    - {include: "#use"}

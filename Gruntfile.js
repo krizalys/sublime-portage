@@ -23,6 +23,14 @@ module.exports = function (grunt) {
                         src:  "src/package-use.yml",
                         dest: "package-use.plist"
                     },
+                    {
+                        src:  "src/package-use-force.yml",
+                        dest: "package-use-force.plist"
+                    },
+                    {
+                        src:  "src/package-use-mask.yml",
+                        dest: "package-use-mask.plist"
+                    }
                 ]
             }
         },
@@ -33,9 +41,19 @@ module.exports = function (grunt) {
                 dest: "ebuild.tmLanguage"
             },
 
-            portage: {
+            "package-use": {
                 src:  "package-use.plist",
                 dest: "package-use.tmLanguage"
+            },
+
+            "package-use-force": {
+                src:  "package-use-force.plist",
+                dest: "package-use-force.tmLanguage"
+            },
+
+            "package-use-mask": {
+                src:  "package-use-mask.plist",
+                dest: "package-use-mask.tmLanguage"
             }
         },
 
@@ -52,10 +70,13 @@ module.exports = function (grunt) {
                     mode:    "zip",
                     archive: "dist/Portage.sublime-package"
                 },
+
                 files: [
                     {src: "package-metadata.json"},
                     {src: "ebuild.tmLanguage"},
-                    {src: "package-use.tmLanguage"}
+                    {src: "package-use.tmLanguage"},
+                    {src: "package-use-force.tmLanguage"},
+                    {src: "package-use-mask.tmLanguage"}
                 ]
             }
         },
@@ -66,6 +87,8 @@ module.exports = function (grunt) {
                     "dist/Portage.sublime-package",
                     "ebuild.tmLanguage",
                     "package-use.tmLanguage",
+                    "package-use-force.tmLanguage",
+                    "package-use-mask.tmLanguage",
                     "package-metadata.json"
                 ]
             }
