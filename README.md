@@ -36,7 +36,7 @@ Default Portage files. Files in **bold** are supported by this package.
     use.stable.mask
     use.stable.force
     virtuals
->
+
 /etc/portage/
     bashrc
     categories
@@ -58,23 +58,23 @@ Default Portage files. Files in **bold** are supported by this package.
     repo.postsync.d
     repos.conf
     sets.conf
->
+
 /etc/portage/env/
     package-specific bashrc files
->
+
 /etc/portage/profile/
     site-specific overrides of /etc/portage/make.profile/
->
+
 /etc/portage/sets/
     user-defined package sets
->
+
 /usr/portage/
     sets.conf
->
+
 /usr/portage/metadata/
     layout.conf
     pkg_desc_index
->
+
 /usr/portage/profiles/
     arch.list
     categories
@@ -98,18 +98,18 @@ Default Portage files. Files in **bold** are supported by this package.
     use.mask
     use.stable.mask
     use.stable.force
->
+
 /usr/share/portage/config/
     make.globals
     repos.conf
     sets
->
+
 /var/cache/edb/
     misc internal cache files
->
+
 /var/db/pkg/
     database to track installed packages
->
+
 /var/lib/portage/
     config
     world
