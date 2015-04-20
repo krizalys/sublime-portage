@@ -46,3 +46,5 @@ net-*/* enable disable
 =x11-libs/gtk+-2* doc
 # unforce mysql support for QT
 x11-libs/qt -mysql
+# set preferred video card for all packages
+*/* VIDEO_CARDS: -* radeon
