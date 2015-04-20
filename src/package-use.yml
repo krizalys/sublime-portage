@@ -3,7 +3,7 @@
 # @link      http://www.krizalys.com/
 #
 
-name:      Per-package USE flag forcing
+name:      Per-package USE flags
 uuid:      22739b48-7c8a-4cf7-b767-61cc4cb98b79
 scopeName: text.package-use
 fileTypes: [package.use]
