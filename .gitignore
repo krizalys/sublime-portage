@@ -1,1 +1,6 @@
 node_modules
+ebuild.tmLanguage
+package-metadata.json
+package-use-force.tmLanguage
+package-use-mask.tmLanguage
+package-use.tmLanguage
