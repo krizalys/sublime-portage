@@ -15,21 +15,21 @@ Here is the current support status from the list of files supported by Portage.
 - [ ] deprecated
 - [ ] eapi
 - [ ] make.defaults
-- [*] packages
+- [x] packages
 - [ ] packages.build
-- [*] **package.accept_keywords**
-- [*] **package.bashrc**
-- [*] **package.keywords**
-- [*] **package.mask**
-- [*] **package.provided**
-- [*] **package.unmask**
-- [*] **package.use**
-- [*] **package.use.force**
-- [*] **package.use.mask**
-- [*] **package.use.stable.force**
-- [*] **package.use.stable.mask**
+- [x] **package.accept_keywords**
+- [x] **package.bashrc**
+- [x] **package.keywords**
+- [x] **package.mask**
+- [x] **package.provided**
+- [x] **package.unmask**
+- [x] **package.use**
+- [x] **package.use.force**
+- [x] **package.use.mask**
+- [x] **package.use.stable.force**
+- [x] **package.use.stable.mask**
 - [ ] parent
-- [*] **profile.bashrc**
+- [x] **profile.bashrc**
 - [ ] soname.provided
 - [ ] use.force
 - [ ] use.mask
@@ -46,15 +46,15 @@ Here is the current support status from the list of files supported by Portage.
 - [ ] make.conf(5)
 - [ ] mirrors
 - [ ] modules
-- [*] package.accept_keywords
-- [*] package.accept_restrict
-- [*] package.env
-- [*] package.keywords
-- [*] package.license
-- [*] package.mask
-- [*] package.properties
-- [*] package.unmask
-- [*] package.use
+- [x] package.accept_keywords
+- [x] package.accept_restrict
+- [x] package.env
+- [x] package.keywords
+- [x] package.license
+- [x] package.mask
+- [x] package.properties
+- [x] package.unmask
+- [x] package.use
 - [ ] postsync.d
 - [ ] repo.postsync.d
 - [ ] repos.conf
@@ -76,7 +76,7 @@ Here is the current support status from the list of files supported by Portage.
 
 - [ ] sets.conf
 
-# /usr/portage/metadata/
+### /usr/portage/metadata/
 
 - [ ] layout.conf
 - [ ] pkg_desc_index
@@ -89,13 +89,13 @@ Here is the current support status from the list of files supported by Portage.
 - [ ] info_vars
 - [ ] license_groups
 - [ ] make.defaults
-- [*] package.mask
-- [*] package.unmask
-- [*] package.use
-- [*] package.use.force
-- [*] package.use.mask
-- [*] package.use.stable.force
-- [*] package.use.stable.mask
+- [x] package.mask
+- [x] package.unmask
+- [x] package.use
+- [x] package.use.force
+- [x] package.use.mask
+- [x] package.use.stable.force
+- [x] package.use.stable.mask
 - [ ] profiles.desc
 - [ ] repo_name
 - [ ] thirdpartymirrors
