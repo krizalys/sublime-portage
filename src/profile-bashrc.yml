@@ -1,0 +1,12 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+name:      Profile bashrc
+uuid:      26ea5445-1953-402f-88d1-f39f4b87d835
+scopeName: source.profile-bashrc
+fileTypes: [profile.bashrc]
+
+patterns:
+    - {include: source.shell}

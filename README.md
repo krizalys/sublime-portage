@@ -29,7 +29,7 @@ Default Portage files. Files in **bold** are supported by this package.
     **package.use.stable.force**
     **package.use.stable.mask**
     parent
-    profile.bashrc
+    **profile.bashrc**
     soname.provided
     use.force
     use.mask
