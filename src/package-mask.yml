@@ -1,0 +1,32 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+name:      Masked packages
+uuid:      fe1314ed-9031-44ea-81b7-c2dd49657db2
+scopeName: text.package-mask
+fileTypes: [package.mask]
+
+repository:
+    comment:
+        comment: Comment
+        name:    comment.line.number-sign.text.package-mask
+        match:   "#.*$"
+
+    atom:
+        comment: Atom
+        name:    meta.atom.text.package-mask
+        match:   "((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)((::)([A-Za-z][-0-9A-Za-z_]*))?"
+        captures:
+            1:  {name: keyword.operator.text.package-mask}   # Operator
+            4:  {name: entity.name.tag.text.package-mask}    # Category
+            8:  {name: keyword.operator.text.package-mask}   # Separator (/)
+            9:  {name: entity.name.tag.text.package-mask}    # Package
+            13: {name: constant.character.text.package-mask} # Version
+            18: {name: keyword.operator.text.package-mask}   # Separator (::)
+            19: {name: entity.name.tag.text.package-mask}    # Overlay
+
+patterns:
+    - {include: "#comment"}
+    - {include: "#atom"}
