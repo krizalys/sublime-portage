@@ -1,8 +1,8 @@
-Krizalys Sublime Portage
-========================
+Sublime Portage
+===============
 
-Krizalys Sublime Portage is a Sublime Text package to support the Portage
-package manager.
+Sublime Portage is a Sublime Text package to support the Portage package
+manager.
 
 Support
 -------
