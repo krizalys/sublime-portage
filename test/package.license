@@ -20,3 +20,6 @@ net-misc/dhcp-3.0_p2 license
 
 # Others
 sys-libs/glibc license
+sys-libs/glibc @group
+sys-libs/glibc *
+sys-libs/glibc -*

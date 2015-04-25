@@ -30,7 +30,7 @@ repository:
     license:
         comment: License
         name:    entity.other.attribute-name.text.package-license
-        match:   "[A-Za-z][-0-9A-Za-z_]*"
+        match:   "-?\*|@?[A-Za-z][-0-9A-Za-z_]*"
 
 patterns:
     - {include: "#comment"}
