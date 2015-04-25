@@ -73,7 +73,7 @@
       <key>env</key>
       <dict>
         <key>comment</key>
-        <string>env</string>
+        <string>Environment</string>
         <key>name</key>
         <string>entity.other.attribute-name.text.package-env</string>
         <key>match</key>
