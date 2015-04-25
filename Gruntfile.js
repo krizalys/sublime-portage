@@ -30,6 +30,10 @@ module.exports = function (grunt) {
                     {
                         src:  "src/package-use-mask.yml",
                         dest: "package-use-mask.plist"
+                    },
+                    {
+                        src:  "src/packages.yml",
+                        dest: "packages.plist"
                     }
                 ]
             }
@@ -54,6 +58,11 @@ module.exports = function (grunt) {
             "package-use-mask": {
                 src:  "package-use-mask.plist",
                 dest: "package-use-mask.tmLanguage"
+            },
+
+            packages: {
+                src:  "packages.plist",
+                dest: "packages.tmLanguage"
             }
         },
 
@@ -63,7 +72,8 @@ module.exports = function (grunt) {
                     "ebuild.tmLanguage",
                     "package-use.tmLanguage",
                     "package-use-force.tmLanguage",
-                    "package-use-mask.tmLanguage"
+                    "package-use-mask.tmLanguage",
+                    "packages.tmLanguage"
                 ]
             }
         }

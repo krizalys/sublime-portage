@@ -15,7 +15,7 @@ Default Portage files. Files in **bold** are supported by this package.
     deprecated
     eapi
     make.defaults
-    packages
+    **packages**
     packages.build
     package.accept_keywords
     package.bashrc

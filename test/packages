@@ -1,0 +1,32 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+# See:
+# $ man 5 ebuild
+
+sys-apps/sed
+sys-libs/zlib
+net-misc/dhcp
+sys-apps/sed-4.0.5
+sys-libs/zlib-1.1.4-r1
+net-misc/dhcp-3.0_p2
+>media-libs/libgd-1.6
+>=media-libs/libgd-1.6
+=media-libs/libgd-1.6
+<=media-libs/libgd-1.6
+<media-libs/libgd-1.6
+
+# See:
+# $ man portage
+
+# i am a comment !
+# pull a version of glibc less than 2.3 into @system
+*<sys-libs/glibc-2.3
+# pull any version of bash into @system
+*app-shells/bash
+# pull a version of readline earlier than 4.2 into @system
+*<sys-libs/readline-4.2
+# pull vim into @profile
+app-editors/vim

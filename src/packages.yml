@@ -1,0 +1,33 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+name:      Packages
+uuid:      36c56ac0-2668-4a78-a306-7ac12dfd480c
+scopeName: text.packages
+fileTypes: [packages]
+
+repository:
+    comment:
+        comment: Comment
+        name:    comment.line.number-sign.text.packages
+        match:   "#.*$"
+
+    atom:
+        comment: Atom
+        name:    meta.atom.text.packages
+        match:   "(\*?)((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)((::)([A-Za-z][-0-9A-Za-z_]*))?"
+        captures:
+            1:  {name: keyword.operator.text.package-use}   # Operator
+            2:  {name: keyword.operator.text.package-use}   # Operator
+            5:  {name: entity.name.tag.text.package-use}    # Category
+            9:  {name: keyword.operator.text.package-use}   # Separator (/)
+            10: {name: entity.name.tag.text.package-use}    # Package
+            14: {name: constant.character.text.package-use} # Version
+            19: {name: keyword.operator.text.package-use}   # Separator (::)
+            20: {name: entity.name.tag.text.package-use}    # Overlay
+
+patterns:
+    - {include: "#comment"}
+    - {include: "#atom"}
