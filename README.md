@@ -7,111 +7,121 @@ package manager.
 Support
 -------
 
-Default Portage files. Files in **bold** are supported by this package.
+Here is the current support status from the list of files supported by Portage.
 
-```
-/etc/portage/make.profile/ or /etc/make.profile/
-    site-specific overrides go in /etc/portage/profile/
-    deprecated
-    eapi
-    make.defaults
-    **packages**
-    packages.build
-    **package.accept_keywords**
-    **package.bashrc**
-    **package.keywords**
-    **package.mask**
-    **package.provided**
-    **package.unmask**
-    **package.use**
-    **package.use.force**
-    **package.use.mask**
-    **package.use.stable.force**
-    **package.use.stable.mask**
-    parent
-    **profile.bashrc**
-    soname.provided
-    use.force
-    use.mask
-    use.stable.mask
-    use.stable.force
-    virtuals
+### /etc/portage/make.profile/ or /etc/make.profile/
 
-/etc/portage/
-    bashrc
-    categories
-    color.map
-    license_groups
-    make.conf(5)
-    mirrors
-    modules
-    **package.accept_keywords**
-    **package.accept_restrict**
-    **package.env**
-    **package.keywords**
-    **package.license**
-    **package.mask**
-    **package.properties**
-    **package.unmask**
-    **package.use**
-    postsync.d
-    repo.postsync.d
-    repos.conf
-    sets.conf
+- [ ] site-specific overrides go in /etc/portage/profile/
+- [ ] deprecated
+- [ ] eapi
+- [ ] make.defaults
+- [*] packages
+- [ ] packages.build
+- [*] **package.accept_keywords**
+- [*] **package.bashrc**
+- [*] **package.keywords**
+- [*] **package.mask**
+- [*] **package.provided**
+- [*] **package.unmask**
+- [*] **package.use**
+- [*] **package.use.force**
+- [*] **package.use.mask**
+- [*] **package.use.stable.force**
+- [*] **package.use.stable.mask**
+- [ ] parent
+- [*] **profile.bashrc**
+- [ ] soname.provided
+- [ ] use.force
+- [ ] use.mask
+- [ ] use.stable.mask
+- [ ] use.stable.force
+- [ ] virtuals
 
-/etc/portage/env/
-    package-specific bashrc files
+### /etc/portage/
 
-/etc/portage/profile/
-    site-specific overrides of /etc/portage/make.profile/
+- [ ] bashrc
+- [ ] categories
+- [ ] color.map
+- [ ] license_groups
+- [ ] make.conf(5)
+- [ ] mirrors
+- [ ] modules
+- [*] package.accept_keywords
+- [*] package.accept_restrict
+- [*] package.env
+- [*] package.keywords
+- [*] package.license
+- [*] package.mask
+- [*] package.properties
+- [*] package.unmask
+- [*] package.use
+- [ ] postsync.d
+- [ ] repo.postsync.d
+- [ ] repos.conf
+- [ ] sets.conf
 
-/etc/portage/sets/
-    user-defined package sets
+### /etc/portage/env/
 
-/usr/portage/
-    sets.conf
+- [ ] package-specific bashrc files
 
-/usr/portage/metadata/
-    layout.conf
-    pkg_desc_index
+### /etc/portage/profile/
 
-/usr/portage/profiles/
-    arch.list
-    categories
-    info_pkgs
-    info_vars
-    license_groups
-    make.defaults
-    **package.mask**
-    **package.unmask**
-    **package.use**
-    **package.use.force**
-    **package.use.mask**
-    **package.use.stable.force**
-    **package.use.stable.mask**
-    profiles.desc
-    repo_name
-    thirdpartymirrors
-    use.desc
-    use.force
-    use.local.desc
-    use.mask
-    use.stable.mask
-    use.stable.force
+- [ ] site-specific overrides of /etc/portage/make.profile/
 
-/usr/share/portage/config/
-    make.globals
-    repos.conf
-    sets
+### /etc/portage/sets/
 
-/var/cache/edb/
-    misc internal cache files
+- [ ] user-defined package sets
 
-/var/db/pkg/
-    database to track installed packages
+### /usr/portage/
 
-/var/lib/portage/
-    config
-    world
-    world_sets
-```
+- [ ] sets.conf
+
+# /usr/portage/metadata/
+
+- [ ] layout.conf
+- [ ] pkg_desc_index
+
+### /usr/portage/profiles/
+
+- [ ] arch.list
+- [ ] categories
+- [ ] info_pkgs
+- [ ] info_vars
+- [ ] license_groups
+- [ ] make.defaults
+- [*] package.mask
+- [*] package.unmask
+- [*] package.use
+- [*] package.use.force
+- [*] package.use.mask
+- [*] package.use.stable.force
+- [*] package.use.stable.mask
+- [ ] profiles.desc
+- [ ] repo_name
+- [ ] thirdpartymirrors
+- [ ] use.desc
+- [ ] use.force
+- [ ] use.local.desc
+- [ ] use.mask
+- [ ] use.stable.mask
+- [ ] use.stable.force
+
+### /usr/share/portage/config/
+
+- [ ] make.globals
+- [ ] repos.conf
+- [ ] sets
+
+### /var/cache/edb/
+
+- [ ] misc internal cache files
+
+### /var/db/pkg/
+
+- [ ] database to track installed packages
+
+### /var/lib/portage/
+
+- [ ] config
+- [ ] world
+- [ ] world_sets
