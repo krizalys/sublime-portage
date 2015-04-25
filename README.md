@@ -125,3 +125,8 @@ Here is the current support status from the list of files supported by Portage.
 - [ ] config
 - [ ] world
 - [ ] world_sets
+
+Credits
+-------
+
+The Sublime Portage package is developed and maintained by Christophe Vidal.
