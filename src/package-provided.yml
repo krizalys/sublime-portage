@@ -1,0 +1,31 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+name:      Provided packages
+uuid:      f7663e5f-cecb-42ca-b228-46320281a61f
+scopeName: text.package-provided
+fileTypes: [package.provided]
+
+repository:
+    comment:
+        comment: Comment
+        name:    comment.line.number-sign.text.package-provided
+        match:   "#.*$"
+
+    atom:
+        comment: Atom
+        name:    meta.atom.text.package-provided
+        match:   "((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?))((::)([A-Za-z][-0-9A-Za-z_]*))?"
+        captures:
+            1:  {name: entity.name.tag.text.package-provided}    # Category
+            5:  {name: keyword.operator.text.package-provided}   # Separator (/)
+            6:  {name: entity.name.tag.text.package-provided}    # Package
+            10: {name: constant.character.text.package-provided} # Version
+            15: {name: keyword.operator.text.package-provided}   # Separator (::)
+            16: {name: entity.name.tag.text.package-provided}    # Overlay
+
+patterns:
+    - {include: "#comment"}
+    - {include: "#atom"}

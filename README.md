@@ -21,7 +21,7 @@ Default Portage files. Files in **bold** are supported by this package.
     **package.bashrc**
     package.keywords
     package.mask
-    package.provided
+    **package.provided**
     package.unmask
     **package.use**
     **package.use.force**

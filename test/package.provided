@@ -1,0 +1,24 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+# See:
+# $ man 5 ebuild
+
+sys-apps/sed-4.0.5
+sys-libs/zlib-1.1.4-r1
+net-misc/dhcp-3.0_p2
+media-libs/libgd-1.6
+
+# See:
+# $ man portage
+
+# you take care of the kernel
+sys-kernel/development-sources-2.6.7
+
+# you installed your own special copy of QT
+x11-libs/qt-3.3.0
+
+# you have modular X but packages want monolithic
+x11-base/xorg-x11-6.8
