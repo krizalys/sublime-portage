@@ -36,42 +36,42 @@
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.text.package-use</string>
+            <string>keyword.operator.text.packages</string>
           </dict>
           <key>2</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.text.package-use</string>
+            <string>keyword.operator.text.packages</string>
           </dict>
           <key>5</key>
           <dict>
             <key>name</key>
-            <string>entity.name.tag.text.package-use</string>
+            <string>entity.name.tag.text.packages</string>
           </dict>
           <key>9</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.text.package-use</string>
+            <string>keyword.operator.text.packages</string>
           </dict>
           <key>10</key>
           <dict>
             <key>name</key>
-            <string>entity.name.tag.text.package-use</string>
+            <string>entity.name.tag.text.packages</string>
           </dict>
           <key>14</key>
           <dict>
             <key>name</key>
-            <string>constant.character.text.package-use</string>
+            <string>constant.character.text.packages</string>
           </dict>
           <key>19</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.text.package-use</string>
+            <string>keyword.operator.text.packages</string>
           </dict>
           <key>20</key>
           <dict>
             <key>name</key>
-            <string>entity.name.tag.text.package-use</string>
+            <string>entity.name.tag.text.packages</string>
           </dict>
         </dict>
       </dict>
