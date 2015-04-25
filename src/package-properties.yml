@@ -1,0 +1,38 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+name:      Per-package properties
+uuid:      46960d1c-5fa1-4e62-9460-54dae8cfdffc
+scopeName: text.package-properties
+fileTypes: [package.properties]
+
+repository:
+    comment:
+        comment: Comment
+        name:    comment.line.number-sign.text.package-properties
+        match:   "#.*$"
+
+    atom:
+        comment: Atom
+        name:    meta.atom.text.package-properties
+        match:   "((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)((::)([A-Za-z][-0-9A-Za-z_]*))?"
+        captures:
+            1:  {name: keyword.operator.text.package-properties}   # Operator
+            4:  {name: entity.name.tag.text.package-properties}    # Category
+            8:  {name: keyword.operator.text.package-properties}   # Separator (/)
+            9:  {name: entity.name.tag.text.package-properties}    # Package
+            13: {name: constant.character.text.package-properties} # Version
+            18: {name: keyword.operator.text.package-properties}   # Separator (::)
+            19: {name: entity.name.tag.text.package-properties}    # Overlay
+
+    property:
+        comment: Property
+        name:    entity.other.attribute-name.text.package-properties
+        match:   "-?\*|[A-Za-z][-0-9A-Za-z_]*"
+
+patterns:
+    - {include: "#comment"}
+    - {include: "#atom"}
+    - {include: "#property"}

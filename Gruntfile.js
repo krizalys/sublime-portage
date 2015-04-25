@@ -44,6 +44,10 @@ module.exports = function (grunt) {
                         dest: "package-mask.plist"
                     },
                     {
+                        src:  "src/package-properties.yml",
+                        dest: "package-properties.plist"
+                    },
+                    {
                         src:  "src/package-provided.yml",
                         dest: "package-provided.plist"
                     },
@@ -111,6 +115,11 @@ module.exports = function (grunt) {
                 dest: "package-mask.tmLanguage"
             },
 
+            "package-properties": {
+                src:  "package-properties.plist",
+                dest: "package-properties.tmLanguage"
+            },
+
             "package-provided": {
                 src:  "package-provided.plist",
                 dest: "package-provided.tmLanguage"
@@ -157,6 +166,7 @@ module.exports = function (grunt) {
                     "package-license.tmLanguage",
                     "package-keywords.tmLanguage",
                     "package-mask.tmLanguage",
+                    "package-properties.tmLanguage",
                     "package-provided.tmLanguage",
                     "package-unmask.tmLanguage",
                     "package-use.tmLanguage",
