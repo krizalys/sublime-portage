@@ -47,7 +47,7 @@ Default Portage files. Files in **bold** are supported by this package.
     modules
     package.accept_keywords
     package.accept_restrict
-    package.env
+    **package.env**
     package.keywords
     package.license
     **package.mask**

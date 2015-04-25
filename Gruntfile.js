@@ -24,6 +24,10 @@ module.exports = function (grunt) {
                         dest: "package-bashrc.plist"
                     },
                     {
+                        src:  "src/package-env.yml",
+                        dest: "package-env.plist"
+                    },
+                    {
                         src:  "src/package-mask.yml",
                         dest: "package-mask.plist"
                     },
@@ -68,6 +72,11 @@ module.exports = function (grunt) {
             "package-bashrc": {
                 src:  "package-bashrc.plist",
                 dest: "package-bashrc.tmLanguage"
+            },
+
+            "package-env": {
+                src:  "package-env.plist",
+                dest: "package-env.tmLanguage"
             },
 
             "package-mask": {
@@ -116,6 +125,7 @@ module.exports = function (grunt) {
                 src: [
                     "ebuild.tmLanguage",
                     "package-bashrc.tmLanguage",
+                    "package-env.tmLanguage",
                     "package-mask.tmLanguage",
                     "package-provided.tmLanguage",
                     "package-unmask.tmLanguage",
