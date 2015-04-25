@@ -4,7 +4,7 @@
 #
 
 # See:
-# $ man 5 restrict
+# $ man 5 ebuild
 
 sys-apps/sed restrict
 sys-libs/zlib restrict
