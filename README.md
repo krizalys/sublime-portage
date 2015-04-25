@@ -18,7 +18,7 @@ Default Portage files. Files in **bold** are supported by this package.
     **packages**
     packages.build
     package.accept_keywords
-    package.bashrc
+    **package.bashrc**
     package.keywords
     package.mask
     package.provided
