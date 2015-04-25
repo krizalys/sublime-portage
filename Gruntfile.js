@@ -57,48 +57,20 @@ module.exports = function (grunt) {
             }
         },
 
-        copy: {
-            default: {
-                src:  "src/package-metadata.json",
-                dest: "package-metadata.json"
-            }
-        },
-
-        compress: {
-            default: {
-                options: {
-                    mode:    "zip",
-                    archive: "dist/Portage.sublime-package"
-                },
-
-                files: [
-                    {src: "package-metadata.json"},
-                    {src: "ebuild.tmLanguage"},
-                    {src: "package-use.tmLanguage"},
-                    {src: "package-use-force.tmLanguage"},
-                    {src: "package-use-mask.tmLanguage"}
-                ]
-            }
-        },
-
         clean: {
             default: {
                 src: [
-                    "dist/Portage.sublime-package",
                     "ebuild.tmLanguage",
                     "package-use.tmLanguage",
                     "package-use-force.tmLanguage",
-                    "package-use-mask.tmLanguage",
-                    "package-metadata.json"
+                    "package-use-mask.tmLanguage"
                 ]
             }
         }
     })
 
     grunt.loadNpmTasks("grunt-contrib-clean")
-    grunt.loadNpmTasks("grunt-contrib-compress")
-    grunt.loadNpmTasks("grunt-contrib-copy")
     grunt.loadNpmTasks("grunt-convert")
     grunt.loadNpmTasks("grunt-rename")
-    grunt.registerTask("default", ["convert", "rename", "copy", "compress"])
+    grunt.registerTask("default", ["convert", "rename"])
 }
