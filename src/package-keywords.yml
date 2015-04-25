@@ -1,0 +1,38 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+name:      Per-package keywords
+uuid:      1ecffe0e-4b29-4304-ab93-8e0ebacd119d
+scopeName: text.package-keywords
+fileTypes: [package.accept_keywords, package.keywords]
+
+repository:
+    comment:
+        comment: Comment
+        name:    comment.line.number-sign.text.package-keywords
+        match:   "#.*$"
+
+    atom:
+        comment: Atom
+        name:    meta.atom.text.package-keywords
+        match:   "((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)((::)([A-Za-z][-0-9A-Za-z_]*))?"
+        captures:
+            1:  {name: keyword.operator.text.package-keywords}   # Operator
+            4:  {name: entity.name.tag.text.package-keywords}    # Category
+            8:  {name: keyword.operator.text.package-keywords}   # Separator (/)
+            9:  {name: entity.name.tag.text.package-keywords}    # Package
+            13: {name: constant.character.text.package-keywords} # Version
+            18: {name: keyword.operator.text.package-keywords}   # Separator (::)
+            19: {name: entity.name.tag.text.package-keywords}    # Overlay
+
+    keyword:
+        comment: Keyword
+        name:    entity.other.attribute-name.text.package-keywords
+        match:   "[~*]?*|-?~?[A-Za-z][-0-9A-Za-z_]*"
+
+patterns:
+    - {include: "#comment"}
+    - {include: "#atom"}
+    - {include: "#keyword"}

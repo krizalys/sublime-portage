@@ -17,9 +17,9 @@ Default Portage files. Files in **bold** are supported by this package.
     make.defaults
     **packages**
     packages.build
-    package.accept_keywords
+    **package.accept_keywords**
     **package.bashrc**
-    package.keywords
+    **package.keywords**
     **package.mask**
     **package.provided**
     **package.unmask**
@@ -45,10 +45,10 @@ Default Portage files. Files in **bold** are supported by this package.
     make.conf(5)
     mirrors
     modules
-    package.accept_keywords
+    **package.accept_keywords**
     package.accept_restrict
     **package.env**
-    package.keywords
+    **package.keywords**
     **package.license**
     **package.mask**
     package.properties

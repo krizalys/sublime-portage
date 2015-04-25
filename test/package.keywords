@@ -1,0 +1,31 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+# See:
+# $ man 5 ebuild
+
+sys-apps/sed ~x86
+sys-libs/zlib ~x86
+net-misc/dhcp ~x86
+sys-apps/sed-4.0.5 ~x86
+sys-libs/zlib-1.1.4-r1 ~x86
+net-misc/dhcp-3.0_p2 ~x86
+>media-libs/libgd-1.6 ~x86
+>=media-libs/libgd-1.6 ~x86
+=media-libs/libgd-1.6 ~x86
+<=media-libs/libgd-1.6 ~x86
+<media-libs/libgd-1.6 ~x86
+
+# See:
+# $ man portage
+
+# always use unstable libgd
+media-libs/libgd ~x86
+# only use stable mplayer
+media-video/mplayer -~x86
+# always use unstable netcat
+net-analyzer/netcat
+games-fps/quake3-demo-1.11.ebuild:KEYWORDS="-* x86"
+games-fps/quake3-demo x86
