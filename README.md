@@ -82,13 +82,13 @@ Default Portage files. Files in **bold** are supported by this package.
     info_vars
     license_groups
     make.defaults
-    package.mask
-    package.unmask
-    package.use
-    package.use.force
-    package.use.mask
-    package.use.stable.force
-    package.use.stable.mask
+    **package.mask**
+    **package.unmask**
+    **package.use**
+    **package.use.force**
+    **package.use.mask**
+    **package.use.stable.force**
+    **package.use.stable.mask**
     profiles.desc
     repo_name
     thirdpartymirrors
