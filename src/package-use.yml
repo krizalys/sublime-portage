@@ -30,7 +30,7 @@ repository:
     use:
         comment: USE flag
         name:    entity.other.attribute-name.text.package-use
-        match:   "(-?[A-Za-z][-0-9A-Za-z_]*)"
+        match:   "-?[A-Za-z][-0-9A-Za-z_]*"
 
 patterns:
     - {include: "#comment"}

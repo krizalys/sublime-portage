@@ -30,7 +30,7 @@ repository:
     env:
         comment: Environment
         name:    entity.other.attribute-name.text.package-env
-        match:   "([^/]*)"
+        match:   "[^/]*"
 
 patterns:
     - {include: "#comment"}

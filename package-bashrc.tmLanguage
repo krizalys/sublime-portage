@@ -77,7 +77,7 @@
         <key>name</key>
         <string>entity.other.attribute-name.text.package-bashrc</string>
         <key>match</key>
-        <string>([^/]*)</string>
+        <string>[^/]*</string>
       </dict>
     </dict>
     <key>patterns</key>

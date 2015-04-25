@@ -30,7 +30,7 @@ repository:
     bashrc:
         comment: bashrc
         name:    entity.other.attribute-name.text.package-bashrc
-        match:   "([^/]*)"
+        match:   "[^/]*"
 
 patterns:
     - {include: "#comment"}
