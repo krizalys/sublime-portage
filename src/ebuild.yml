@@ -8,7 +8,14 @@ uuid:      c5418506-a7b0-4b25-a013-2fb4d1d7107c
 scopeName: source.ebuild
 fileTypes: [ebuild]
 
-repository: {}
+repository:
+    eapi_function:
+        comment: EAPI function
+        name:    meta.eapi-function.source.ebuild
+        match:   "\\b(unpack|econf|emake|einstall|into|insinto|exeinto|docinto|insopts|diropts|exeopts|libopts|dobin|doconfd|dodir|dodoc|doenvd|doexe|dohard|dohtml|doinfo|doinitd|doins|dolib|dolib\.a|dolib\.so|doman|domo|dosbin|dosym|fowners|fperms|keepdir|newbin|newconfd|newdoc|newenvd|newexe|newinitd|newins|newlib\.a|newlib\.so|newman|newsbin|einfo|einfon|elog|ewarn|eerror|ebegin|eend|epause|ebeep|eqawarn|use|useq|usev|use_enable|use_with|has|hasq|hasv|best_version|has_version|addread|addwrite|adddeny|addpredict)\\b"
+        captures:
+            1: {name: support.function.source.ebuild}
 
 patterns:
+    - {include: "#eapi_function"}
     - {include: source.shell}
