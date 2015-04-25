@@ -3,10 +3,8 @@
 # @link      http://www.krizalys.com/
 #
 
-#
 # See:
 # /etc/profile
-#
 
 # /etc/profile: login shell setup
 #

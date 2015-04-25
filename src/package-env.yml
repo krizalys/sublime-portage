@@ -28,7 +28,7 @@ repository:
             19: {name: entity.name.tag.text.package-env}    # Overlay
 
     env:
-        comment: env
+        comment: Environment
         name:    entity.other.attribute-name.text.package-env
         match:   "([^/]*)"
 
