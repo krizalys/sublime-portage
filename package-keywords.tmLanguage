@@ -78,7 +78,7 @@
         <key>name</key>
         <string>entity.other.attribute-name.text.package-keywords</string>
         <key>match</key>
-        <string>[~*]?*|-?~?[A-Za-z][-0-9A-Za-z_]*</string>
+        <string>[~\*]?\*|-?~?[A-Za-z][-0-9A-Za-z_]*</string>
       </dict>
     </dict>
     <key>patterns</key>
