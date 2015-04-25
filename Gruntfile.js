@@ -20,6 +20,10 @@ module.exports = function (grunt) {
                         dest: "ebuild.plist"
                     },
                     {
+                        src:  "src/package-accept-restrict.yml",
+                        dest: "package-accept-restrict.plist"
+                    },
+                    {
                         src:  "src/package-bashrc.yml",
                         dest: "package-bashrc.plist"
                     },
@@ -75,6 +79,11 @@ module.exports = function (grunt) {
             ebuild: {
                 src:  "ebuild.plist",
                 dest: "ebuild.tmLanguage"
+            },
+
+            "package-accept-restrict": {
+                src:  "package-accept-restrict.plist",
+                dest: "package-accept-restrict.tmLanguage"
             },
 
             "package-bashrc": {
@@ -142,6 +151,7 @@ module.exports = function (grunt) {
             default: {
                 src: [
                     "ebuild.tmLanguage",
+                    "package-accept-restrict.tmLanguage",
                     "package-bashrc.tmLanguage",
                     "package-env.tmLanguage",
                     "package-license.tmLanguage",

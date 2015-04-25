@@ -46,7 +46,7 @@ Default Portage files. Files in **bold** are supported by this package.
     mirrors
     modules
     **package.accept_keywords**
-    package.accept_restrict
+    **package.accept_restrict**
     **package.env**
     **package.keywords**
     **package.license**
