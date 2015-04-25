@@ -17,19 +17,19 @@ Here is the current support status from the list of files supported by Portage.
 - [ ] make.defaults
 - [x] packages
 - [ ] packages.build
-- [x] **package.accept_keywords**
-- [x] **package.bashrc**
-- [x] **package.keywords**
-- [x] **package.mask**
-- [x] **package.provided**
-- [x] **package.unmask**
-- [x] **package.use**
-- [x] **package.use.force**
-- [x] **package.use.mask**
-- [x] **package.use.stable.force**
-- [x] **package.use.stable.mask**
+- [x] package.accept_keywords
+- [x] package.bashrc
+- [x] package.keywords
+- [x] package.mask
+- [x] package.provided
+- [x] package.unmask
+- [x] package.use
+- [x] package.use.force
+- [x] package.use.mask
+- [x] package.use.stable.force
+- [x] package.use.stable.mask
 - [ ] parent
-- [x] **profile.bashrc**
+- [x] profile.bashrc
 - [ ] soname.provided
 - [ ] use.force
 - [ ] use.mask
