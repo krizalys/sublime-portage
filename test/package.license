@@ -1,0 +1,22 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+# See:
+# $ man 5 ebuild
+
+sys-apps/sed license
+sys-libs/zlib license
+net-misc/dhcp license
+sys-apps/sed-4.0.5 license
+sys-libs/zlib-1.1.4-r1 license
+net-misc/dhcp-3.0_p2 license
+>media-libs/libgd-1.6 license
+>=media-libs/libgd-1.6 license
+=media-libs/libgd-1.6 license
+<=media-libs/libgd-1.6 license
+<media-libs/libgd-1.6 license
+
+# Others
+sys-libs/glibc license

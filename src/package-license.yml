@@ -1,0 +1,38 @@
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+name:      Per-package licenses
+uuid:      e4fa45bc-3cdb-4635-9297-6944ecfdcf9f
+scopeName: text.package-license
+fileTypes: [package.license]
+
+repository:
+    comment:
+        comment: Comment
+        name:    comment.line.number-sign.text.package-license
+        match:   "#.*$"
+
+    atom:
+        comment: Atom
+        name:    meta.atom.text.package-license
+        match:   "((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)((::)([A-Za-z][-0-9A-Za-z_]*))?"
+        captures:
+            1:  {name: keyword.operator.text.package-license}   # Operator
+            4:  {name: entity.name.tag.text.package-license}    # Category
+            8:  {name: keyword.operator.text.package-license}   # Separator (/)
+            9:  {name: entity.name.tag.text.package-license}    # Package
+            13: {name: constant.character.text.package-license} # Version
+            18: {name: keyword.operator.text.package-license}   # Separator (::)
+            19: {name: entity.name.tag.text.package-license}    # Overlay
+
+    license:
+        comment: License
+        name:    entity.other.attribute-name.text.package-license
+        match:   "[A-Za-z][-0-9A-Za-z_]*"
+
+patterns:
+    - {include: "#comment"}
+    - {include: "#atom"}
+    - {include: "#license"}

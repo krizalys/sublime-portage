@@ -49,7 +49,7 @@ Default Portage files. Files in **bold** are supported by this package.
     package.accept_restrict
     **package.env**
     package.keywords
-    package.license
+    **package.license**
     **package.mask**
     package.properties
     **package.unmask**
