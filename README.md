@@ -53,7 +53,7 @@ Default Portage files. Files in **bold** are supported by this package.
     **package.mask**
     package.properties
     **package.unmask**
-    package.use
+    **package.use**
     postsync.d
     repo.postsync.d
     repos.conf
