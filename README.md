@@ -20,9 +20,9 @@ Default Portage files. Files in **bold** are supported by this package.
     package.accept_keywords
     **package.bashrc**
     package.keywords
-    package.mask
+    **package.mask**
     **package.provided**
-    package.unmask
+    **package.unmask**
     **package.use**
     **package.use.force**
     **package.use.mask**
