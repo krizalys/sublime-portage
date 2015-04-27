@@ -1,8 +1,28 @@
 Sublime Portage
 ===============
 
-Sublime Portage is a Sublime Text package to support the Portage package
-manager.
+Sublime Portage is a [Sublime Text][1] package to support the [Portage][2]
+package manager.
+
+Installation
+------------
+
+### Installation through Package Control
+
+1. Make sure you installed [Package Control][3].
+2. Choose *Install Package* from the Command Palette (`Ctrl+Shift+P` on Windows
+& Linux, `⇧⌘P` on Mac OS X).
+3. Select *Portage* and press `Enter`.
+
+Additionally, with [auto_upgrade][4] enabled, Package Control will keep all
+installed packages up-to-date.
+
+### Manual installation
+
+1. Download any `.tmTheme` file from this repository.
+2. Choose *Browse Packages* from the Command Palette (`Ctrl+Shift+P` on Windows
+& Linux, `⇧⌘P` on Mac OS X).
+3. Copy the `.tmTheme` file(s) to the `Packages` directory.
 
 Support
 -------
@@ -130,3 +150,8 @@ Credits
 -------
 
 The Sublime Portage package is developed and maintained by Christophe Vidal.
+
+[1]: http://www.sublimetext.com/
+[2]: https://wiki.gentoo.org/wiki/Project:Portage
+[3]: https://packagecontrol.io/
+[4]: https://packagecontrol.io/docs/settings
