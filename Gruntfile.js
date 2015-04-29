@@ -74,6 +74,10 @@ module.exports = function (grunt) {
                     {
                         src:  "src/profile-bashrc.yml",
                         dest: "profile-bashrc.plist"
+                    },
+                    {
+                        src:  "src/use.yml",
+                        dest: "use.plist"
                     }
                 ]
             }
@@ -153,6 +157,11 @@ module.exports = function (grunt) {
             "profile-bashrc": {
                 src:  "profile-bashrc.plist",
                 dest: "profile-bashrc.tmLanguage"
+            },
+
+            use: {
+                src:  "use.plist",
+                dest: "use.tmLanguage"
             }
         },
 
@@ -173,7 +182,8 @@ module.exports = function (grunt) {
                     "package-use-force.tmLanguage",
                     "package-use-mask.tmLanguage",
                     "packages.tmLanguage",
-                    "profile-bashrc.tmLanguage"
+                    "profile-bashrc.tmLanguage",
+                    "use.tmLanguage"
                 ]
             }
         }
