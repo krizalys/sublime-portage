@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>USE flags</string>
+    <key>uuid</key>
+    <string>fc2abf84-d7a8-4c04-af56-5e77c47a9d3f</string>
+    <key>scopeName</key>
+    <string>text.use</string>
+    <key>fileTypes</key>
+    <array>
+      <string>use.force</string>
+      <string>use.stable.force</string>
+      <string>use.mask</string>
+      <string>use.stable.mask</string>
+    </array>
+    <key>repository</key>
+    <dict>
+      <key>comment</key>
+      <dict>
+        <key>comment</key>
+        <string>Comment</string>
+        <key>name</key>
+        <string>comment.line.number-sign.text.use</string>
+        <key>match</key>
+        <string>#.*$</string>
+      </dict>
+      <key>use</key>
+      <dict>
+        <key>comment</key>
+        <string>USE flag</string>
+        <key>name</key>
+        <string>entity.other.attribute-name.text.use</string>
+        <key>match</key>
+        <string>-?[A-Za-z][-0-9A-Za-z_]*</string>
+      </dict>
+    </dict>
+    <key>patterns</key>
+    <array>
+      <dict>
+        <key>include</key>
+        <string>#comment</string>
+      </dict>
+      <dict>
+        <key>include</key>
+        <string>#use</string>
+      </dict>
+    </array>
+  </dict>
+</plist>

@@ -51,10 +51,10 @@ Here is the current support status from the list of files supported by Portage.
 - [ ] parent
 - [x] profile.bashrc
 - [ ] soname.provided
-- [ ] use.force
-- [ ] use.mask
-- [ ] use.stable.mask
-- [ ] use.stable.force
+- [X] use.force
+- [X] use.mask
+- [X] use.stable.mask
+- [X] use.stable.force
 - [ ] virtuals
 
 ### /etc/portage/
@@ -120,11 +120,11 @@ Here is the current support status from the list of files supported by Portage.
 - [ ] repo_name
 - [ ] thirdpartymirrors
 - [ ] use.desc
-- [ ] use.force
+- [X] use.force
 - [ ] use.local.desc
-- [ ] use.mask
-- [ ] use.stable.mask
-- [ ] use.stable.force
+- [X] use.mask
+- [X] use.stable.mask
+- [X] use.stable.force
 
 ### /usr/share/portage/config/
 
