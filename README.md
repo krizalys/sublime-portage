@@ -14,8 +14,8 @@ Installation
 & Linux, `⇧⌘P` on Mac OS X).
 3. Select *Portage* and press `Enter`.
 
-Additionally, with [auto_upgrade][auto-upgrade] enabled, Package Control will
-keep all installed packages up-to-date.
+Additionally, with [auto_upgrade][package-control-settings] enabled, Package
+Control will keep all installed packages up-to-date.
 
 ### Manual installation
 
@@ -151,7 +151,7 @@ Credits
 
 The Sublime Portage package is developed and maintained by Christophe Vidal.
 
-[sublime-text]:    http://www.sublimetext.com/
-[portage]:         https://wiki.gentoo.org/wiki/Project:Portage
-[package-control]: https://packagecontrol.io/
-[auto-upgrade]:    https://packagecontrol.io/docs/settings
+[sublime-text]:             http://www.sublimetext.com/
+[portage]:                  https://wiki.gentoo.org/wiki/Project:Portage
+[package-control]:          https://packagecontrol.io/
+[package-control-settings]: https://packagecontrol.io/docs/settings
