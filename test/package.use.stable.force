@@ -46,3 +46,8 @@ net-*/* enable -disable
 =x11-libs/gtk+-2* doc
 # unforce mysql support for QT
 x11-libs/qt -mysql
+
+# Other tests
+
+# slotting
+cat-subcat/package-1.2.3:slot/slot-4.5.6::overlay enable -disable

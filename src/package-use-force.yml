@@ -17,15 +17,17 @@ repository:
     atom:
         comment: Atom
         name:    meta.atom.text.package-use-force
-        match:   "((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)((::)([A-Za-z][-0-9A-Za-z_]*))?"
+        match:   "((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)(((:)([A-Za-z][-0-9A-Za-z_/.]*))?)((::)([A-Za-z][-0-9A-Za-z_]*))?"
         captures:
             1:  {name: keyword.operator.text.package-use-force}   # Operator
             4:  {name: entity.name.tag.text.package-use-force}    # Category
             8:  {name: keyword.operator.text.package-use-force}   # Separator (/)
             9:  {name: entity.name.tag.text.package-use-force}    # Package
             13: {name: constant.character.text.package-use-force} # Version
-            18: {name: keyword.operator.text.package-use-force}   # Separator (::)
-            19: {name: entity.name.tag.text.package-use-force}    # Overlay
+            19: {name: keyword.operator.text.package-use-force}   # Separator (:)
+            20: {name: entity.name.tag.text.package-use-force}    # Slot
+            22: {name: keyword.operator.text.package-use-force}   # Separator (::)
+            23: {name: entity.name.tag.text.package-use-force}    # Overlay
 
     use:
         comment: USE flag
