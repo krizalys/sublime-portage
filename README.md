@@ -57,7 +57,7 @@ If the default Python binary is 3.4 or newer, and you installed the dependencies
 globally:
 
 ```
-inv convert
+inv build
 ```
 
 If the default Python binary is not 3.4 or newer, or you installed the
@@ -67,7 +67,7 @@ In this example, we assume that `python3.4` is the name of the Python 3.4
 binary, and we assume that local dependencies are installed in `~/.local`:
 
 ```
-python3.4 ~/.local/bin/inv convert
+python3.4 ~/.local/bin/inv build
 ```
 
 Support

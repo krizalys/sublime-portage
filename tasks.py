@@ -12,7 +12,7 @@ import plistlib
 import yaml
 
 @task
-def convert():
+def build():
     files = {
         "ebuild.tmLanguage":                  "ebuild.yml",
         "package-accept-restrict.tmLanguage": "package-accept-restrict.yml",
