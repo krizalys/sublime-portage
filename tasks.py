@@ -12,8 +12,8 @@ import plistlib
 import yaml
 
 #
-# The build task converts all YAML files from the src directory into tmLanguage
-# files into the root directory.
+# The build task converts all YAML files from the src directory into property
+# list files in the root directory.
 #
 # NOTE: Although this does not matter from Sublime Text, Python does not
 # guarantee that the order of the XML elements in the tmLanguage files will be
