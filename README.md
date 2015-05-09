@@ -8,7 +8,6 @@ Installation
 ------------
 
 ### Installation through Package Control
-
 1. Make sure you installed [Package Control][package-control].
 2. Choose *Install Package* from the Command Palette (`Ctrl+Shift+P` on Windows
 & Linux, `⇧⌘P` on Mac OS X).
@@ -18,7 +17,6 @@ Additionally, with [auto_upgrade][package-control-settings] enabled, Package
 Control will keep all installed packages up-to-date.
 
 ### Manual installation
-
 1. Download any `.tmTheme` file from this repository.
 2. Choose *Browse Packages* from the Command Palette (`Ctrl+Shift+P` on Windows
 & Linux, `⇧⌘P` on Mac OS X).
@@ -28,14 +26,12 @@ Building
 --------
 
 To build the package by yourself, you need:
-
 - [Python][python] 3.4 or newer
 - [Invoke][invoke]
 
 First, install the required dependencies.
 
 ### Installing the dependencies globally
-
 This requires super user prileges (using sudo in this example):
 
 ```
@@ -43,7 +39,6 @@ sudo pip install -r requirements.txt
 ```
 
 ### Installing the dependencies locally
-
 This does not require super user prileges. On most systems, local dependencies
 are installed in `~/.local`.
 
@@ -76,7 +71,6 @@ Support
 Here is the current support status from the list of files supported by Portage.
 
 ### /etc/portage/make.profile/ or /etc/make.profile/
-
 - [ ] site-specific overrides go in /etc/portage/profile/
 - [ ] deprecated
 - [ ] eapi
@@ -104,7 +98,6 @@ Here is the current support status from the list of files supported by Portage.
 - [ ] virtuals
 
 ### /etc/portage/
-
 - [ ] bashrc
 - [ ] categories
 - [ ] color.map
@@ -127,28 +120,22 @@ Here is the current support status from the list of files supported by Portage.
 - [ ] sets.conf
 
 ### /etc/portage/env/
-
 - [ ] package-specific bashrc files
 
 ### /etc/portage/profile/
-
 - [ ] site-specific overrides of /etc/portage/make.profile/
 
 ### /etc/portage/sets/
-
 - [ ] user-defined package sets
 
 ### /usr/portage/
-
 - [ ] sets.conf
 
 ### /usr/portage/metadata/
-
 - [ ] layout.conf
 - [ ] pkg_desc_index
 
 ### /usr/portage/profiles/
-
 - [ ] arch.list
 - [ ] categories
 - [ ] info_pkgs
@@ -173,21 +160,17 @@ Here is the current support status from the list of files supported by Portage.
 - [X] use.stable.force
 
 ### /usr/share/portage/config/
-
 - [ ] make.globals
 - [ ] repos.conf
 - [ ] sets
 
 ### /var/cache/edb/
-
 - [ ] misc internal cache files
 
 ### /var/db/pkg/
-
 - [ ] database to track installed packages
 
 ### /var/lib/portage/
-
 - [ ] config
 - [ ] world
 - [ ] world_sets
