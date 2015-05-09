@@ -15,7 +15,7 @@ import yaml
 # The build task converts all YAML files from the src directory into tmLanguage
 # files into the root directory.
 #
-# NOTE: Although this does not matter from SublimeText, Python does not
+# NOTE: Although this does not matter from Sublime Text, Python does not
 # guarantee that the order of the XML elements in the tmLanguage files will be
 # the same upon each generation. This may affect the list of changed files while
 # committing to the Git repository and should be handled wisely.
