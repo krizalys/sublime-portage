@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <dict>
-    <key>name</key>
-    <string>Profile bashrc</string>
-    <key>uuid</key>
-    <string>26ea5445-1953-402f-88d1-f39f4b87d835</string>
-    <key>scopeName</key>
-    <string>source.profile-bashrc</string>
-    <key>fileTypes</key>
-    <array>
-      <string>profile.bashrc</string>
-    </array>
-    <key>patterns</key>
-    <array>
-      <dict>
-        <key>include</key>
-        <string>source.shell</string>
-      </dict>
-    </array>
-  </dict>
+<dict>
+	<key>name</key>
+	<string>Profile bashrc</string>
+	<key>scopeName</key>
+	<string>source.profile-bashrc</string>
+	<key>uuid</key>
+	<string>26ea5445-1953-402f-88d1-f39f4b87d835</string>
+	<key>fileTypes</key>
+	<array>
+		<string>profile.bashrc</string>
+	</array>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>source.shell</string>
+		</dict>
+	</array>
+</dict>
 </plist>

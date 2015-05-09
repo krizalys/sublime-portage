@@ -1,6 +1,11 @@
 Change log
 ==========
 
+[Unreleased][unreleased]
+------------------------
+### Changed
+- Syntax file generation is now using Python and Invoke.
+
 [1.0.1] - 2015-05-09
 --------------------
 ### Added
@@ -17,4 +22,5 @@ Change log
 - Syntax file generation using node.js and Grunt.
 - README file.
 
-[1.0.1]: https://github.com/krizalys/sublime-portage/compare/1.0.0...1.0.1
+[unreleased]: https://github.com/krizalys/sublime-portage/compare/1.0.1...HEAD
+[1.0.1]:      https://github.com/krizalys/sublime-portage/compare/1.0.0...1.0.1

@@ -1,4 +1,6 @@
-node_modules
-
 # Mac OS X artifacts
 .DS_Store
+
+# Python artifacts
+__pycache__/
+*.pyc
