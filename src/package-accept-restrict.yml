@@ -12,27 +12,27 @@ repository:
     comment:
         comment: Comment
         name:    comment.line.number-sign.text.package-accept-restrict
-        match:   "#.*$"
+        match:   '#.*$'
 
     atom:
         comment: Atom
         name:    meta.atom.text.package-accept-restrict
-        match:   "((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)((::)([A-Za-z][-0-9A-Za-z_]*))?"
+        match:   '((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)((::)([A-Za-z][-0-9A-Za-z_]*))?'
         captures:
-            1:  {name: keyword.operator.text.package-accept-restrict}   # Operator
-            4:  {name: entity.name.tag.text.package-accept-restrict}    # Category
-            8:  {name: keyword.operator.text.package-accept-restrict}   # Separator (/)
-            9:  {name: entity.name.tag.text.package-accept-restrict}    # Package
-            13: {name: constant.character.text.package-accept-restrict} # Version
-            18: {name: keyword.operator.text.package-accept-restrict}   # Separator (::)
-            19: {name: entity.name.tag.text.package-accept-restrict}    # Overlay
+            '1':  {name: keyword.operator.text.package-accept-restrict}   # Operator
+            '4':  {name: entity.name.tag.text.package-accept-restrict}    # Category
+            '8':  {name: keyword.operator.text.package-accept-restrict}   # Separator (/)
+            '9':  {name: entity.name.tag.text.package-accept-restrict}    # Package
+            '13': {name: constant.character.text.package-accept-restrict} # Version
+            '18': {name: keyword.operator.text.package-accept-restrict}   # Separator (::)
+            '19': {name: entity.name.tag.text.package-accept-restrict}    # Overlay
 
     restrict:
         comment: Restrict
         name:    entity.other.attribute-name.text.package-accept-restrict
-        match:   "-?\*|[A-Za-z][-0-9A-Za-z_]*"
+        match:   '-?\*|[A-Za-z][-0-9A-Za-z_]*'
 
 patterns:
-    - {include: "#comment"}
-    - {include: "#atom"}
-    - {include: "#restrict"}
+    - {include: '#comment'}
+    - {include: '#atom'}
+    - {include: '#restrict'}

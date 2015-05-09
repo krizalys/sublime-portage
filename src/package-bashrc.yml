@@ -12,27 +12,27 @@ repository:
     comment:
         comment: Comment
         name:    comment.line.number-sign.text.package-bashrc
-        match:   "#.*$"
+        match:   '#.*$'
 
     atom:
         comment: Atom
         name:    meta.atom.text.package-bashrc
-        match:   "((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)((::)([A-Za-z][-0-9A-Za-z_]*))?"
+        match:   '((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)((::)([A-Za-z][-0-9A-Za-z_]*))?'
         captures:
-            1:  {name: keyword.operator.text.package-bashrc}   # Operator
-            4:  {name: entity.name.tag.text.package-bashrc}    # Category
-            8:  {name: keyword.operator.text.package-bashrc}   # Separator (/)
-            9:  {name: entity.name.tag.text.package-bashrc}    # Package
-            13: {name: constant.character.text.package-bashrc} # Version
-            18: {name: keyword.operator.text.package-bashrc}   # Separator (::)
-            19: {name: entity.name.tag.text.package-bashrc}    # Overlay
+            '1':  {name: keyword.operator.text.package-bashrc}   # Operator
+            '4':  {name: entity.name.tag.text.package-bashrc}    # Category
+            '8':  {name: keyword.operator.text.package-bashrc}   # Separator (/)
+            '9':  {name: entity.name.tag.text.package-bashrc}    # Package
+            '13': {name: constant.character.text.package-bashrc} # Version
+            '18': {name: keyword.operator.text.package-bashrc}   # Separator (::)
+            '19': {name: entity.name.tag.text.package-bashrc}    # Overlay
 
     bashrc:
         comment: bashrc
         name:    entity.other.attribute-name.text.package-bashrc
-        match:   "[^/]*"
+        match:   '[^/]*'
 
 patterns:
-    - {include: "#comment"}
-    - {include: "#atom"}
-    - {include: "#bashrc"}
+    - {include: '#comment'}
+    - {include: '#atom'}
+    - {include: '#bashrc'}

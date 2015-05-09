@@ -12,13 +12,13 @@ repository:
     comment:
         comment: Comment
         name:    comment.line.number-sign.text.use
-        match:   "#.*$"
+        match:   '#.*$'
 
     use:
         comment: USE flag
         name:    entity.other.attribute-name.text.use
-        match:   "-?[A-Za-z][-0-9A-Za-z_]*"
+        match:   '-?[A-Za-z][-0-9A-Za-z_]*'
 
 patterns:
-    - {include: "#comment"}
-    - {include: "#use"}
+    - {include: '#comment'}
+    - {include: '#use'}

@@ -12,23 +12,23 @@ repository:
     comment:
         comment: Comment
         name:    comment.line.number-sign.text.package-mask
-        match:   "#.*$"
+        match:   '#.*$'
 
     atom:
         comment: Atom
         name:    meta.atom.text.package-mask
-        match:   "((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)(((:)([A-Za-z][-0-9A-Za-z_/.]*))?)((::)([A-Za-z][-0-9A-Za-z_]*))?"
+        match:   '((<|>)?=|(<|>))?((\*|[a-z][0-9a-z]+)(-(\*|[a-z]+))?)(/)((\*|([A-Za-z](-[A-Za-z_+]+|[0-9A-Za-z_+])*))(-[0-9*]+(\.[0-9*]+)*[a-z]?(_[a-z*]+[0-9*]+)?(-r[0-9]+)?)?)(((:)([A-Za-z][-0-9A-Za-z_/.]*))?)((::)([A-Za-z][-0-9A-Za-z_]*))?'
         captures:
-            1:  {name: keyword.operator.text.package-mask}   # Operator
-            4:  {name: entity.name.tag.text.package-mask}    # Category
-            8:  {name: keyword.operator.text.package-mask}   # Separator (/)
-            9:  {name: entity.name.tag.text.package-mask}    # Package
-            13: {name: constant.character.text.package-mask} # Version
-            19: {name: keyword.operator.text.package-mask}   # Separator (:)
-            20: {name: entity.name.tag.text.package-mask}    # Slot
-            22: {name: keyword.operator.text.package-mask}   # Separator (::)
-            23: {name: entity.name.tag.text.package-mask}    # Overlay
+            '1':  {name: keyword.operator.text.package-mask}   # Operator
+            '4':  {name: entity.name.tag.text.package-mask}    # Category
+            '8':  {name: keyword.operator.text.package-mask}   # Separator (/)
+            '9':  {name: entity.name.tag.text.package-mask}    # Package
+            '13': {name: constant.character.text.package-mask} # Version
+            '19': {name: keyword.operator.text.package-mask}   # Separator (:)
+            '20': {name: entity.name.tag.text.package-mask}    # Slot
+            '22': {name: keyword.operator.text.package-mask}   # Separator (::)
+            '23': {name: entity.name.tag.text.package-mask}    # Overlay
 
 patterns:
-    - {include: "#comment"}
-    - {include: "#atom"}
+    - {include: '#comment'}
+    - {include: '#atom'}
