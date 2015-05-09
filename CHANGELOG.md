@@ -8,7 +8,7 @@ Change log
 - Syntax highlighting for slots in per-package USE flags files.
 - .editorconfig file.
 - CHANGELOG file.
-- 'Installation' section to the README.
+- *Installation* section to the README.
 
 1.0.0 - 2015-04-25
 ------------------
