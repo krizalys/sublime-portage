@@ -6,6 +6,9 @@ Change log
 ### Changed
 - Syntax file generation is now using Python and Invoke.
 
+### Added
+- *Building* section to the README.
+
 [1.0.1] - 2015-05-09
 --------------------
 ### Added

@@ -24,6 +24,52 @@ Control will keep all installed packages up-to-date.
 & Linux, `⇧⌘P` on Mac OS X).
 3. Copy the `.tmTheme` file(s) to the `Packages` directory.
 
+Building
+--------
+
+To build the package by yourself, you need:
+
+- [Python][python] 3.4 or newer
+- [Invoke][invoke]
+
+First, install the required dependencies.
+
+### Installing the dependencies globally
+
+This requires super user prileges (using sudo in this example):
+
+```
+sudo pip install -r requirements.txt
+```
+
+### Installing the dependencies locally
+
+This does not require super user prileges. On most systems, local dependencies
+are installed in `~/.local`.
+
+```
+pip install -r requirements.txt --user
+```
+
+You may now build the package.
+
+If the default Python binary is 3.4 or newer, and you installed the dependencies
+globally:
+
+```
+inv convert
+```
+
+If the default Python binary is not 3.4 or newer, or you installed the
+dependencies locally.
+
+In this example, we assume that `python3.4` is the name of the Python 3.4
+binary, and we assume that local dependencies are installed in `~/.local`:
+
+```
+python3.4 ~/.local/bin/inv convert
+```
+
 Support
 -------
 
@@ -155,3 +201,5 @@ The Sublime Portage package is developed and maintained by Christophe Vidal.
 [portage]:                  https://wiki.gentoo.org/wiki/Project:Portage
 [package-control]:          https://packagecontrol.io/
 [package-control-settings]: https://packagecontrol.io/docs/settings
+[python]:                   https://www.python.org/
+[invoke]:                   http://www.pyinvoke.org/
