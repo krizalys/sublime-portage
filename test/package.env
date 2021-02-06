@@ -1,5 +1,5 @@
 #
-# @copyright 2008-2020 Krizalys. All rights reserved.
+# @copyright 2008-2021 Krizalys. All rights reserved.
 # @link      http://www.krizalys.com/
 #
 
